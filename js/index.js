@@ -23,8 +23,44 @@ define(['jquery'],function(jquery){
         })
     }
 
+    function addData(){
+        $.ajax({
+            url:'./data/cake.json',
+            success:function(arr){
+                var str = ` <h4>蛋糕品牌</h4>`;
+                for(var i = 0;i<arr.length;i++){
+                    str += `<div class="cake-content fl">
+                    <img src="../imgs/cake (${i+1}).png" alt="">
+                    <p>${arr[i].name}</p>
+                </div>`;
+                }
+                $('#tab2 .type').html(str);
+            },
+            error:function(msg){
+                console.log(msg)
+            }
+        })
+        // $.ajax({
+        //     url:'./data/cakeCity.json',
+        //     success:function(arr){
+        //         var str = ` <h4>蛋糕品牌</h4>`;
+        //         for(var i = 0;i<arr.length;i++){
+        //             str += `<div class="cake-content fl">
+        //             <img src="../imgs/cake (${i+1}).png" alt="">
+        //             <p>${arr[i].name}</p>
+        //         </div>`;
+        //         }
+        //         $('#tab2 .type').html(str);
+        //     },
+        //     error:function(msg){    
+        //         console.log(msg)
+        //     }
+        // })
+    }
+
     return{
         headerCode,
         rotate,
+        addData,
     }
 })

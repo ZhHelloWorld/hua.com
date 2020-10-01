@@ -223,7 +223,88 @@ h1 {
 .slide {
   background: url("../imgs/slide (1).jpg") no-repeat center; }
   .slide .slide-c {
-    border: 10x solid #000;
+    border: 1px solid #000;
     width: 1200px;
     height: 400px;
-    margin: auto; }
+    margin: auto;
+    position: relative; }
+
+.slide-nav {
+  width: 216px;
+  height: 400px;
+  background-color: rgba(49, 55, 60, 0.6); }
+  .slide-nav .use {
+    border-bottom: 1px dashed #B9BFBF; }
+    .slide-nav .use .use-c {
+      padding: 6px 10px;
+      color: #fff; }
+    .slide-nav .use h3 {
+      cursor: pointer;
+      margin-bottom: 3px;
+      font-size: 16px; }
+      .slide-nav .use h3:hover {
+        color: #FF4F25; }
+    .slide-nav .use .use-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      font-size: 14px; }
+      .slide-nav .use .use-content p {
+        cursor: pointer;
+        margin: 3px 8px 3px 0; }
+        .slide-nav .use .use-content p:hover {
+          color: #FF4F25; }
+  .slide-nav .tab-use {
+    border-bottom: 1px dashed #B9BFBF; }
+    .slide-nav .tab-use .tab-use-c {
+      padding: 7px 10px;
+      color: #fff; }
+    .slide-nav .tab-use h3 {
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 5px; }
+    .slide-nav .tab-use span {
+      padding: 8px;
+      background: url("../imgs/Sprite (2).png") no-repeat -40px 4px;
+      margin-top: 2px; }
+    .slide-nav .tab-use .use-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      font-size: 14px; }
+      .slide-nav .tab-use .use-content p {
+        cursor: pointer;
+        margin: 3px 4px 3px 0; }
+        .slide-nav .tab-use .use-content p:hover {
+          color: #FF4F25; }
+
+#tab1, #tab2, #tab3 {
+  width: 983px;
+  height: 400px;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  right: 0; }
+
+.type {
+  padding: 10px 20px; }
+  .type h4 {
+    font-size: 14px;
+    font-weight: normal; }
+  .type .type-content {
+    margin: 5px 15px 25px; }
+    .type .type-content img {
+      width: 68px;
+      height: 68px;
+      margin: 5px 0; }
+    .type .type-content p {
+      font-size: 12px;
+      text-align: center; }
+  .type .cake-content {
+    margin: 5px 12px 25px; }
+    .type .cake-content img {
+      width: 108px;
+      height: 60px; }
+    .type .cake-content p {
+      font-size: 12px;
+      text-align: center; }

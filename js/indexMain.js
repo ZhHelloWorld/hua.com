@@ -8,4 +8,5 @@ require.config({
 require(['index'],function(index){
     index.headerCode();
     index.rotate();
+    index.addData();
 })
