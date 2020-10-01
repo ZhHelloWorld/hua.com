@@ -1,0 +1,229 @@
+.top-ad a {
+  display: block;
+  height: 80px;
+  background: url("../imgs/newuser_order_100.png") no-repeat center; }
+
+.header {
+  background-color: #F3F5F7; }
+  .header .header-c {
+    width: 1200px;
+    height: 40px;
+    margin: auto; }
+
+.header-l {
+  color: #666;
+  font-size: 12px;
+  line-height: 40px; }
+  .header-l span {
+    padding: 7px;
+    margin-right: 3px; }
+  .header-l .collect {
+    margin-right: 20px;
+    cursor: pointer; }
+    .header-l .collect:hover {
+      color: #FF734D; }
+    .header-l .collect span {
+      background: url("../imgs/Sprite (2).png") no-repeat 0px -14px; }
+  .header-l .focusWechat {
+    margin-left: 10px;
+    padding: 0 15px;
+    cursor: pointer;
+    position: relative; }
+    .header-l .focusWechat:hover {
+      background-color: #fff;
+      color: #FF734D; }
+    .header-l .focusWechat #wechat-code {
+      border: 1px solid #F3F5F7;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      padding: 12px;
+      background-color: #fff;
+      display: none; }
+      .header-l .focusWechat #wechat-code img {
+        width: 124px;
+        height: 124px; }
+      .header-l .focusWechat #wechat-code p {
+        text-align: center;
+        line-height: 15px;
+        color: #000 !important; }
+    .header-l .focusWechat span {
+      background: url("../imgs/Sprite (2).png") no-repeat -23px -14px; }
+  .header-l .app {
+    position: relative;
+    padding: 0 15px;
+    cursor: pointer; }
+    .header-l .app:hover {
+      background-color: #fff;
+      color: #FF734D; }
+    .header-l .app #app-code {
+      border: 1px solid #F3F5F7;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      padding: 10px;
+      background-color: #fff;
+      display: none; }
+      .header-l .app #app-code img {
+        width: 130px;
+        height: 130px; }
+      .header-l .app #app-code p {
+        text-align: center;
+        line-height: 15px;
+        color: #000 !important; }
+    .header-l .app span {
+      background: url("../imgs/Sprite (2).png") no-repeat -47px -14px; }
+
+.header-r {
+  color: #666;
+  font-size: 12px;
+  line-height: 40px; }
+  .header-r #shopcar {
+    color: #666;
+    margin-right: 15px; }
+    .header-r #shopcar span {
+      color: #FF734D; }
+    .header-r #shopcar:hover {
+      color: #FF734D; }
+  .header-r #service {
+    position: relative;
+    cursor: pointer;
+    padding: 0 16px;
+    margin: 0 15px; }
+    .header-r #service span {
+      margin-left: 3px; }
+    .header-r #service:hover {
+      background-color: #fff; }
+      .header-r #service:hover #customer {
+        color: #FF734D; }
+    .header-r #service #rotate {
+      transition: all .5s; }
+    .header-r #service #customer-list {
+      display: none;
+      border: 1px solid #F3F5F7;
+      line-height: 20px;
+      padding: 20px;
+      position: absolute;
+      top: 40px;
+      left: 0; }
+      .header-r #service #customer-list li:hover {
+        color: #FF734D; }
+  .header-r .Order-inquiry {
+    cursor: pointer;
+    margin-left: 10px; }
+    .header-r .Order-inquiry:hover {
+      color: #FF734D; }
+  .header-r #register {
+    color: #666;
+    display: block;
+    margin-left: 10px; }
+    .header-r #register:hover {
+      color: #FF734D; }
+  .header-r #login {
+    color: #666;
+    display: block; }
+    .header-r #login:hover {
+      color: #FF734D; }
+
+.top-c {
+  width: 1200px;
+  margin: auto;
+  height: 100px; }
+
+.logo {
+  height: 100px; }
+
+h1 {
+  width: 238px;
+  height: 70px;
+  text-indent: -999px;
+  background: url("../imgs/Sprite (2).png") no-repeat 0px -240px;
+  margin-top: 20px; }
+
+.search-box {
+  display: flex;
+  width: 440px;
+  height: 48px;
+  border: 2px solid #FF734C;
+  margin-top: 20px;
+  margin-left: 120px;
+  border-radius: 25px; }
+  .search-box span {
+    padding: 10px 20px;
+    background: url("../imgs/Sprite (1).png") no-repeat -330px -120px; }
+  .search-box input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    flex: 3; }
+  .search-box button {
+    flex: 1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #FF653D;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 22px; }
+
+.search-fast {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  margin-top: 5px;
+  margin-left: 160px;
+  font-size: 12px;
+  color: #B4BABF; }
+  .search-fast p {
+    cursor: pointer; }
+    .search-fast p:hover {
+      color: #FF734D; }
+
+.contact {
+  font-size: 14px;
+  margin-top: 40px; }
+  .contact span {
+    padding: 10px 20px; }
+  .contact .phone {
+    margin-right: 5px;
+    background: url("../imgs/Sprite (1).png") no-repeat -374px -42px; }
+  .contact a:hover {
+    color: #FF734D; }
+  .contact a span {
+    background: url("../imgs/Sprite (1).png") no-repeat -290px -124px;
+    margin-left: 30px;
+    margin-right: 5px; }
+
+.type-nav-c {
+  width: 1200px;
+  margin: auto; }
+  .type-nav-c .sort {
+    width: 216px;
+    height: 52px;
+    background-color: #FF4F25;
+    border-radius: 16px 16px 0 0;
+    text-align: center;
+    line-height: 52px;
+    font-weight: bolder;
+    color: #fff;
+    margin-right: 30px;
+    cursor: pointer; }
+  .type-nav-c .type-content > :last-child {
+    color: #FF4F25; }
+  .type-nav-c .type-content li {
+    margin: 0 15px;
+    float: left;
+    line-height: 52px;
+    cursor: pointer;
+    font-weight: bolder; }
+    .type-nav-c .type-content li:hover {
+      color: #FF4F25; }
+
+.slide {
+  background: url("../imgs/slide (1).jpg") no-repeat center; }
+  .slide .slide-c {
+    border: 10x solid #000;
+    width: 1200px;
+    height: 400px;
+    margin: auto; }
