@@ -9,4 +9,5 @@ require(['index'],function(index){
     index.headerCode();
     index.rotate();
     index.addData();
+    index.tab();
 })

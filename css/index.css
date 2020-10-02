@@ -223,7 +223,6 @@ h1 {
 .slide {
   background: url("../imgs/slide (1).jpg") no-repeat center; }
   .slide .slide-c {
-    border: 1px solid #000;
     width: 1200px;
     height: 400px;
     margin: auto;
@@ -284,7 +283,8 @@ h1 {
   position: absolute;
   background-color: #fff;
   top: 0;
-  right: 0; }
+  right: 0;
+  display: none; }
 
 .type {
   padding: 10px 20px; }
@@ -292,7 +292,10 @@ h1 {
     font-size: 14px;
     font-weight: normal; }
   .type .type-content {
+    cursor: pointer;
     margin: 5px 15px 25px; }
+    .type .type-content:hover {
+      color: #FF4F25; }
     .type .type-content img {
       width: 68px;
       height: 68px;
@@ -301,10 +304,114 @@ h1 {
       font-size: 12px;
       text-align: center; }
   .type .cake-content {
-    margin: 5px 12px 25px; }
+    margin: 5px 12px 25px;
+    cursor: pointer; }
+    .type .cake-content:hover {
+      color: #FF4F25; }
     .type .cake-content img {
       width: 108px;
       height: 60px; }
     .type .cake-content p {
       font-size: 12px;
       text-align: center; }
+
+.cakeCity {
+  padding: 10px 20px; }
+  .cakeCity h4 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px; }
+  .cakeCity .cake-content {
+    cursor: pointer;
+    margin: 5px 10px 15px; }
+    .cakeCity .cake-content:hover {
+      color: #FF4F25; }
+    .cakeCity .cake-content p {
+      font-size: 12px;
+      text-align: center; }
+
+#tab3 .type img {
+  width: 108px;
+  height: 60px; }
+
+#tab3 h4 {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 10px 20px; }
+
+#tab3 .type2 {
+  padding: 10px 20px; }
+  #tab3 .type2 h4 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 10px 20px; }
+  #tab3 .type2 .cake-content {
+    margin: 5px 20px;
+    cursor: pointer; }
+    #tab3 .type2 .cake-content:hover {
+      color: #FF4F25; }
+    #tab3 .type2 .cake-content img {
+      width: 68px;
+      height: 68px; }
+    #tab3 .type2 .cake-content p {
+      font-size: 12px;
+      text-align: center; }
+
+.active {
+  display: block !important; }
+
+.label-c {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; }
+  .label-c span {
+    padding: 4px 12px;
+    margin-right: 5px; }
+  .label-c p {
+    cursor: pointer;
+    line-height: 60px;
+    font-size: 18px; }
+    .label-c p:hover {
+      color: #FF4F25; }
+  .label-c > :first-child span {
+    background: url("../imgs/Sprite (2).png") no-repeat -102px -98px; }
+  .label-c > :nth-child(2) span {
+    background: url("../imgs/Sprite (2).png") no-repeat -136px -98px; }
+  .label-c > :nth-child(3) span {
+    background: url("../imgs/Sprite (2).png") no-repeat -204px -98px; }
+  .label-c > :nth-child(4) span {
+    background: url("../imgs/Sprite (2).png") no-repeat -238px -98px; }
+  .label-c > :last-child span {
+    background: url("../imgs/Sprite (2).png") no-repeat -170px -98px; }
+
+.festival-c {
+  width: 1200px;
+  margin: auto; }
+  .festival-c .festival-pic {
+    width: 100%;
+    cursor: pointer; }
+  .festival-c .festival-contant {
+    background-color: #A8232B;
+    padding: 20px 16px; }
+    .festival-c .festival-contant .festival-box {
+      width: 264px;
+      height: 140px;
+      padding: 10px 10px;
+      background-color: #fff;
+      margin: 4px;
+      border-radius: 16px;
+      cursor: pointer; }
+      .festival-c .festival-contant .festival-box .left p {
+        color: #C26137;
+        font-weight: bolder; }
+      .festival-c .festival-contant .festival-box .left .describe {
+        color: #71797F;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 20px; }
+      .festival-c .festival-contant .festival-box .left div {
+        margin-top: 25px; }
+      .festival-c .festival-contant .festival-box img {
+        width: 164px;
+        height: 144px; }
