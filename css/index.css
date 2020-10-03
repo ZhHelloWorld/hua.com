@@ -415,3 +415,87 @@ h1 {
       .festival-c .festival-contant .festival-box img {
         width: 164px;
         height: 144px; }
+
+.toWho-c {
+  width: 1200px;
+  margin: 20px auto; }
+  .toWho-c .left, .toWho-c .right {
+    width: 288px;
+    height: 376px;
+    margin: 0 12px; }
+  .toWho-c .left > :last-child, .toWho-c .right > :last-child {
+    margin-top: 16px; }
+  .toWho-c .right > :nth-child(2) {
+    margin-left: 16px; }
+  .toWho-c img {
+    float: left;
+    cursor: pointer; }
+
+.sell-point {
+  width: 1200px;
+  margin: auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between; }
+  .sell-point img {
+    cursor: pointer; }
+
+.elder {
+  margin-top: 50px;
+  background-color: #E9ECF0; }
+  .elder .elder-c {
+    width: 1200px;
+    margin: auto;
+    padding-top: 20px; }
+    .elder .elder-c .elder-contant .big-tit {
+      position: relative; }
+      .elder .elder-c .elder-contant .big-tit .Special-area {
+        width: 236px;
+        height: 56px;
+        border: 1px solid #666;
+        position: absolute;
+        bottom: 20px;
+        left: 25px;
+        cursor: pointer;
+        line-height: 56px;
+        font-weight: bolder;
+        font-size: 26px;
+        text-align: center;
+        color: #666; }
+    .elder .elder-c .elder-contant .right {
+      width: 900px; }
+      .elder .elder-c .elder-contant .right .box {
+        height: 320px;
+        text-align: center;
+        background-color: #fff;
+        margin: 6px;
+        cursor: pointer; }
+        .elder .elder-c .elder-contant .right .box:hover {
+          color: #FF4F25; }
+          .elder .elder-c .elder-contant .right .box:hover img {
+            width: 233px;
+            height: 255px; }
+      .elder .elder-c .elder-contant .right .img {
+        width: 212px;
+        height: 232px;
+        overflow: hidden; }
+        .elder .elder-c .elder-contant .right .img img {
+          width: 212px;
+          height: 232px;
+          transition: all 1s; }
+      .elder .elder-c .elder-contant .right .price {
+        font-weight: bolder;
+        margin: 10px 0; }
+      .elder .elder-c .elder-contant .right span {
+        display: block;
+        color: #71797f;
+        font-size: 12px; }
+    .elder .elder-c .elder-tit h3 {
+      font-size: 26px; }
+      .elder .elder-c .elder-tit h3 span {
+        font-size: 20px;
+        font-weight: normal; }
+    .elder .elder-c .elder-tit > span {
+      font-size: 14px;
+      cursor: pointer;
+      line-height: 40px; }
