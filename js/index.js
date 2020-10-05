@@ -28,13 +28,19 @@ define(['jquery'], function (jquery) {
             url: './data/cake.json',
             success: function (arr) {
                 var str = ` <h4>蛋糕品牌</h4>`;
+                var str2 = ``;
                 for (var i = 0; i < arr.length; i++) {
                     str += `<div class="cake-content fl">
                     <img src="../imgs/cake (${i + 1}).png" alt="">
                     <p>${arr[i].name}</p>
                 </div>`;
+                str2 += `<div class="cake-con fl">
+                <img src="../imgs/cake (${i + 1}).png" alt="">
+                <p>${arr[i].name}</p>
+            </div>`;
                 }
                 $('#tab2 .type').html(str);
+                $('#cakes-top').html(str2);
             },
             error: function (msg) {
                 console.log(msg)
@@ -44,12 +50,17 @@ define(['jquery'], function (jquery) {
             url: './data/cakeCity.json',
             success: function (arr) {
                 var str = `<h4>蛋糕城市</h4>`;
+                var str2 = ``;
                 for (var i = 0; i < arr.length; i++) {
                     str += `<div class="cake-content fl">
                     <p>${arr[i].city}</p>
                 </div>`;
                 }
+                for (var i = 0; i < arr.length-1; i++){
+                    str2 += `<span>${arr[i].city}</span>`
+                }
                 $('#tab2 .cakeCity').html(str);
+                $('#city-list').html(str2);
             },
             error: function (msg) {
                 console.log(msg)
@@ -71,6 +82,27 @@ define(['jquery'], function (jquery) {
             error: function (msg) {
                 console.log(msg)
             }
+        })
+        $.ajax({
+            url:'./data/showProducts.json',
+            success: function (arr){
+                var str = ``;
+                for (var i = 0; i < arr.length; i++){
+                    str += `<div class="box fl">
+            <div class="img">
+                <img src="./imgs/giftShow (${i+1}).jpg" alt="">
+            </div>
+            <p>${arr[i].name}</p>
+            <div class="price">${arr[i].price}</div>
+            <span>${arr[i].sell}</span>
+        </div>`;
+                }
+                $('#gift-show').html(str);
+            },
+            error:function(msg){
+                console.log(msg);
+            }
+            
         })
     }
 
@@ -96,10 +128,26 @@ define(['jquery'], function (jquery) {
             }
         })
     }
+
+    function cityChoose(){
+        $('#choose').mouseenter(function(){
+            $('#city-none').css('display','block')
+        }).mouseleave(function(){
+            $('#city-none').mouseenter(function(){
+                $('#city-none').css('display','block');
+            })
+            $('#city-none').css('display','none');
+        })
+        $('#city-none').mouseleave(function(){
+            $('#city-none').css('display','none');
+
+        })
+    }
     return {
         headerCode,
         rotate,
         addData,
         tab,
+        cityChoose,
     }
 })

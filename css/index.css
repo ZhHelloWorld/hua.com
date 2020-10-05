@@ -499,3 +499,162 @@ h1 {
       font-size: 14px;
       cursor: pointer;
       line-height: 40px; }
+
+.love {
+  margin-top: 0;
+  background-color: #F7F9FA; }
+
+.Immortal {
+  margin-top: 0; }
+
+.cakes {
+  background-color: #F7F9FA;
+  margin-top: 0; }
+  .cakes .cakes-contant {
+    background-color: #fff; }
+  .cakes .Distribution {
+    position: relative;
+    background-color: #FF5930;
+    width: 288px;
+    height: 48px;
+    border-radius: 0 30px 30px 0;
+    line-height: 48px;
+    padding: 0 20px;
+    color: #fff; }
+    .cakes .Distribution .left span {
+      padding: 10px;
+      background: url("../imgs/Sprite (2).png") no-repeat -24px -32px;
+      margin-right: 5px; }
+    .cakes .Distribution .right {
+      cursor: pointer; }
+      .cakes .Distribution .right span {
+        float: right;
+        padding: 10px 10px;
+        background: url("../imgs/Sprite (2).png") no-repeat 5px 5px;
+        transition: all .5s;
+        margin-top: 13px;
+        margin-left: 5px; }
+      .cakes .Distribution .right:hover span {
+        transform: rotate(90deg); }
+    .cakes .Distribution .city {
+      background-color: #fff;
+      display: none;
+      width: 384px;
+      height: 390px;
+      position: absolute;
+      top: 48px;
+      left: 190px;
+      border: 1px solid #FF5930;
+      line-height: 25px; }
+      .cakes .Distribution .city .city-tit {
+        color: #FF6A00;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bolder; }
+      .cakes .Distribution .city .city-hot {
+        background-color: #F5F5F5;
+        font-size: 12px;
+        color: #000;
+        padding-left: 10px; }
+      .cakes .Distribution .city #city-list {
+        color: #000;
+        font-size: 12px; }
+        .cakes .Distribution .city #city-list span {
+          float: left;
+          margin: 8px 20px;
+          cursor: pointer; }
+          .cakes .Distribution .city #city-list span:hover {
+            color: #FF4F25; }
+      .cakes .Distribution .city .city-search {
+        overflow: hidden;
+        display: flex;
+        padding: 5px 40px; }
+        .cakes .Distribution .city .city-search input {
+          flex: 1;
+          height: 30px;
+          border: 2px solid #ddd;
+          border-right: none;
+          outline: none;
+          padding: 0 10px; }
+        .cakes .Distribution .city .city-search span {
+          border: 2px solid #ddd;
+          border-left: none;
+          padding: 10px 20px;
+          background: url("../imgs/Sprite (1).png") no-repeat -330px -130px; }
+  .cakes .cities {
+    height: 48px;
+    line-height: 48px; }
+    .cakes .cities p {
+      float: left;
+      margin: 0 10px;
+      cursor: pointer; }
+      .cakes .cities p:hover {
+        color: #FF4F25; }
+  .cakes #cakes-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff; }
+    .cakes #cakes-top .cake-con {
+      text-align: center;
+      width: 12%;
+      cursor: pointer;
+      font-size: 12px;
+      margin: 10px; }
+      .cakes #cakes-top .cake-con img {
+        width: 108px;
+        height: 60px; }
+      .cakes #cakes-top .cake-con:hover {
+        color: #FF4F25; }
+  .cakes .gift-right {
+    margin-top: 20px;
+    width: auto !important; }
+    .cakes .gift-right .img {
+      padding: 4px; }
+    .cakes .gift-right .box {
+      background-color: #fff;
+      margin: 10px 8px !important; }
+
+.gift-name {
+  background-color: #fff; }
+  .gift-name > p {
+    float: left;
+    font-size: 12px;
+    margin: 0 18px;
+    color: #71797F;
+    margin-top: 15px; }
+
+.gift-img {
+  margin: 5px 10px;
+  cursor: pointer; }
+  .gift-img:hover {
+    color: #FF4F25; }
+  .gift-img p {
+    font-size: 12px;
+    text-align: center; }
+
+#gift-show .box {
+  margin: 6px 10px;
+  width: 18%;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer; }
+  #gift-show .box img {
+    width: 211px;
+    height: 230px;
+    transition: all 1s; }
+  #gift-show .box .img {
+    width: 211px;
+    height: 230px;
+    overflow: hidden; }
+  #gift-show .box:hover {
+    color: #FF4F25; }
+    #gift-show .box:hover img {
+      width: 232px;
+      height: 253px; }
+  #gift-show .box .price {
+    font-weight: bolder;
+    margin: 5px 0; }
+  #gift-show .box span {
+    color: #71797F;
+    font-size: 12px; }

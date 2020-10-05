@@ -10,4 +10,5 @@ require(['index'],function(index){
     index.rotate();
     index.addData();
     index.tab();
+    index.cityChoose();
 })
