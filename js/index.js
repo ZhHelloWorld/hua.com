@@ -63,7 +63,7 @@ define(['jquery'], function (jquery) {
                 $('#city-list').html(str2);
             },
             error: function (msg) {
-                console.log(msg)
+                console.log(msg);
             }
         })
 
@@ -98,6 +98,20 @@ define(['jquery'], function (jquery) {
         </div>`;
                 }
                 $('#gift-show').html(str);
+            },
+            error:function(msg){
+                console.log(msg);
+            }
+            
+        })
+        $.ajax({
+            url:'./data/info.json',
+            success: function (arr){
+                var str = ``;
+                for (var i = 0; i < arr.length; i++){
+                    str += `<li>${arr[i].info}</li>`;
+                }
+                $('#hot-info ul').html(str);
             },
             error:function(msg){
                 console.log(msg);

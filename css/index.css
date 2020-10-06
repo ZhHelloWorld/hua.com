@@ -531,7 +531,7 @@ h1 {
         float: right;
         padding: 10px 10px;
         background: url("../imgs/Sprite (2).png") no-repeat 5px 5px;
-        transition: all .5s;
+        transition: all .3s;
         margin-top: 13px;
         margin-left: 5px; }
       .cakes .Distribution .right:hover span {
@@ -658,3 +658,323 @@ h1 {
   #gift-show .box span {
     color: #71797F;
     font-size: 12px; }
+
+.banner {
+  background-color: #F7F9FA;
+  padding: 40px 0 10px 0; }
+  .banner .banner-c {
+    width: 1200px;
+    margin: auto; }
+
+.hot .hot-tit {
+  background-color: #fff;
+  padding: 0 10px;
+  margin-bottom: 2px;
+  line-height: 50px; }
+  .hot .hot-tit .more {
+    cursor: pointer;
+    font-size: 14px; }
+
+#hot-info {
+  background-color: #fff; }
+  #hot-info ul {
+    padding: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  #hot-info li {
+    cursor: pointer;
+    width: 20%;
+    margin: 5px 60px;
+    list-style: disc;
+    font-size: 12px; }
+    #hot-info li:hover {
+      color: #FF4F25; }
+
+.advantage {
+  background-color: #F7F9FA;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 2px; }
+  .advantage p {
+    margin: 30px 0;
+    font-size: 20px;
+    width: 21%;
+    cursor: pointer; }
+    .advantage p:hover {
+      color: #FF4F25; }
+    .advantage p span {
+      margin-right: 10px;
+      padding: 10px 20px; }
+  .advantage > :first-child span {
+    background: url("../imgs/Sprite (2).png") no-repeat 0 -136px; }
+  .advantage > :nth-child(2) span {
+    background: url("../imgs/Sprite (2).png") no-repeat -50px -136px; }
+  .advantage > :nth-child(3) span {
+    background: url("../imgs/Sprite (2).png") no-repeat -100px -136px; }
+  .advantage > :nth-child(4) span {
+    background: url("../imgs/Sprite (2).png") no-repeat -150px -136px; }
+  .advantage > :nth-child(5) span {
+    background: url("../imgs/Sprite (2).png") no-repeat -200px -136px; }
+  .advantage > :nth-child(6) span {
+    background: url("../imgs/Sprite (2).png") no-repeat -250px -136px; }
+  .advantage > :nth-child(7) span {
+    background: url("../imgs/Sprite (2).png") no-repeat -300px -136px; }
+  .advantage > :last-child span {
+    background: url("../imgs/Sprite (2).png") no-repeat -350px -136px; }
+
+.product {
+  height: 152px;
+  padding: 36px 0; }
+  .product ul {
+    width: 197px;
+    font-size: 12px;
+    float: left; }
+    .product ul h5 {
+      font-size: 16px;
+      margin-bottom: 10px; }
+    .product ul li {
+      margin: 3px 20px 3px 0;
+      cursor: pointer;
+      float: left; }
+      .product ul li:hover {
+        color: #FF4F25; }
+
+.contact-us {
+  width: 241px !important; }
+  .contact-us li {
+    margin: 2px; }
+  .contact-us .contact-cus-ser {
+    width: 100px;
+    color: #2B2828;
+    cursor: pointer;
+    background-color: #FF4F25;
+    height: 32px;
+    clear: both;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 20px; }
+    .contact-us .contact-cus-ser span {
+      padding: 5px 10px;
+      margin-right: 5px;
+      background: url("../imgs/Sprite (2).png") no-repeat -180px -67px; }
+
+.scan img {
+  width: 120px;
+  height: 120px; }
+
+.scan p {
+  text-align: center; }
+
+.scan .scan-wx {
+  margin-left: 50px; }
+
+.footer {
+  padding: 20px 0;
+  background-color: #232628; }
+  .footer .footer-c {
+    width: 1200px;
+    margin: auto; }
+  .footer .footer-nav {
+    display: flex;
+    justify-content: space-between; }
+    .footer .footer-nav span {
+      color: #fff; }
+    .footer .footer-nav li {
+      color: #fff;
+      cursor: pointer; }
+      .footer .footer-nav li:hover {
+        color: #FF4F25; }
+
+.copy {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #717971;
+  line-height: 20px; }
+  .copy p {
+    float: left;
+    cursor: pointer;
+    margin: 0 1px; }
+    .copy p:hover {
+      color: #FF4F25; }
+  .copy span {
+    margin: 0 1px;
+    float: left; }
+  .copy .icon {
+    width: 20px;
+    height: 20px;
+    background: url("../imgs/Sprite (2).png") no-repeat -360px -72px; }
+
+.url {
+  font-size: 12px;
+  color: #717971;
+  clear: both;
+  padding-top: 5px; }
+  .url .link {
+    cursor: pointer; }
+    .url .link:hover {
+      color: #FF4F25; }
+
+.brand {
+  padding-top: 15px; }
+  .brand span {
+    float: left;
+    margin-right: 20px; }
+  .brand > :first-child {
+    width: 149px;
+    height: 40px;
+    background: url("../imgs/Sprite (2).png") no-repeat -518px -136px; }
+  .brand > :nth-child(2) {
+    width: 123px;
+    height: 40px;
+    background: url("../imgs/Sprite (2).png") no-repeat -678px -136px; }
+  .brand > :nth-child(3) {
+    width: 33px;
+    height: 40px;
+    background: url("../imgs/Sprite (2).png") no-repeat -810px -136px; }
+
+.links {
+  padding-top: 10px;
+  display: flex;
+  font-size: 12px;
+  color: #717971; }
+  .links li {
+    cursor: pointer;
+    margin: 0 3px; }
+    .links li:hover {
+      color: #FF4F25; }
+
+.consult {
+  width: 174px;
+  height: 60px;
+  background-color: #FF6600;
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer; }
+  .consult span {
+    margin-right: 20px;
+    padding: 15px 25px;
+    background: url("../imgs/(4).png") no-repeat -6px -4px; }
+
+.aside {
+  position: fixed;
+  width: 36px;
+  background-color: #595656;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.user {
+  width: 36px;
+  height: 36px;
+  background: url("../imgs/ibar_sprites.png") no-repeat 0 0; }
+  .user:hover {
+    background-color: #FF4F25;
+    cursor: pointer; }
+
+.Shopping-cart {
+  height: 133px;
+  padding: 5px 7px;
+  border-top: 1px solid #939191;
+  border-bottom: 1px solid #939191;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer; }
+  .Shopping-cart:hover {
+    background-color: #FF4F25; }
+    .Shopping-cart:hover .count {
+      background-color: #fff;
+      color: #FF6600; }
+  .Shopping-cart span {
+    width: 22px;
+    height: 36px;
+    background: url("../imgs/ibar_sprites.png") no-repeat -7px -37px; }
+  .Shopping-cart .count {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #FF6600;
+    line-height: 21px;
+    color: #fff;
+    text-align: center;
+    margin-top: 8px; }
+
+.fun {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px 0; }
+  .fun div {
+    margin: 2px 0; }
+
+.Collection {
+  width: 36px;
+  height: 36px;
+  background: url("../imgs/ibar_sprites.png") no-repeat 0 -71px;
+  cursor: pointer; }
+  .Collection:hover {
+    background-color: #FF4F25; }
+
+.history {
+  width: 36px;
+  height: 36px;
+  background: url("../imgs/ibar_sprites.png") no-repeat 0 -107px;
+  cursor: pointer; }
+  .history:hover {
+    background-color: #FF4F25; }
+
+.tel {
+  width: 36px;
+  height: 36px;
+  background: url("../imgs/ibar_sprites.png") no-repeat 0 -143px;
+  cursor: pointer; }
+  .tel:hover {
+    background-color: #FF4F25; }
+
+.online {
+  width: 36px;
+  height: 36px;
+  background: url("../imgs/ibar_sprites.png") no-repeat 0 -179px;
+  cursor: pointer; }
+  .online:hover {
+    background-color: #FF4F25; }
+
+.aside-code {
+  width: 36px;
+  height: 36px;
+  background: url("../imgs/ibar_sprites.png") no-repeat 0 -217px;
+  cursor: pointer; }
+  .aside-code:hover {
+    background-color: #FF4F25; }
+
+.feedback {
+  width: 36px;
+  height: 36px;
+  background: url("../imgs/ibar_sprites.png") no-repeat 0 -359px;
+  cursor: pointer; }
+  .feedback:hover {
+    background-color: #FF4F25; }
+
+.back-top {
+  width: 36px;
+  height: 36px; }
+  .back-top #back-top {
+    width: 36px;
+    height: 36px;
+    background: url("../imgs/ibar_sprites.png") no-repeat 0 -250px;
+    cursor: pointer;
+    display: none; }
+    .back-top #back-top:hover {
+      background-color: #FF4F25; }
