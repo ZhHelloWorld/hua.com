@@ -11,4 +11,5 @@ require(['index'],function(index){
     index.addData();
     index.tab();
     index.cityChoose();
+    index.slide();
 })
