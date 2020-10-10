@@ -3,24 +3,23 @@ require.config({
         jquery: 'jquery-1.10.1.min',
         JqCookie: 'jquery.cookie',
         index: 'index',
-        showCart: 'showCart'
+        list: 'list'
     },
     shim: {
         "JqCookie": ['jquery'],
-        "showCart": ['JqCookie'],
+        "list": ['JqCookie'],
         parabola: {
             exports: "_"
         }
     }
 })
 
-require(['index', 'showCart'], function (index, showCart) {
+require(['index', 'list'], function (index, list) {
     index.headerCode();
     index.rotate();
-    showCart.addCarData();
-    showCart.SUM();
-    showCart.addDatas();
-    showCart.carMove();
-    showCart.nodeClick();
-    // showCart.ballMove();
+    list.addCarData();
+    list.SUM();
+    list.addDatas();
+    list.carMove();
+    list.nodeClick();
 })

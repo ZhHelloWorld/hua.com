@@ -270,7 +270,7 @@ define(['jquery'], function (jquery) {
         var aSlides = $('.slides');
 
         aLis.click(function () {
-            console.log($(this).index())
+            iNow = $(this).index()
             tabS();
         })
         $('.slide').mouseenter(function () {
@@ -285,6 +285,7 @@ define(['jquery'], function (jquery) {
                 tabS();
             }, 2000);
         })
+
 
         $('#left').click(function(){
             iNow--;
@@ -311,7 +312,7 @@ define(['jquery'], function (jquery) {
                 aLis.eq(0).addClass('active');
             }
             aSlides.animate({
-                opacity: 0.5,
+                opacity: 0.6,
             }).css('display', 'none').eq(iNow).animate({
                 opacity: 1,
             }).css('display', 'block')
@@ -324,12 +325,52 @@ define(['jquery'], function (jquery) {
             }
         }
     }
+    function backTop(){
+        $(window).scroll(function(){
+            var distance = $(window).scrollTop();
+            if(distance >= 400){
+                $('#back-top').css('display','block');
+            }else{
+                $('#back-top').css('display','none')
+            }
+
+            $('#back-top').click(function(){
+                clearInterval(timer);
+                var timer = setInterval(() => {
+                var distance = $(window).scrollTop();
+                    if(distance<=0){
+                        clearInterval(timer)
+                    }
+                    var time = distance-=10;
+                    document.documentElement.scrollTop=document.body.scrollTop = time;
+                }, 40);
+            })
+
+        })
+    }
+
+    var throttle = function(fn,wait){
+        var timer = null;
+        return function(){
+            var that = this;
+            var args = arguments;
+            if(!timer){
+                timer = setTimeout(function(){
+                    fn.call(that,...args)
+                    clearTimeout(timer);
+                    timer = null;
+                },wait);
+            }
+        }
+    }
     return {
         headerCode,
         rotate,
         addData,
         tab,
         cityChoose,
-        slide
+        slide,
+        backTop,
+        throttle
     }
 })

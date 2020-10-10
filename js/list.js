@@ -124,7 +124,6 @@ define(['jquery', 'JqCookie'], function (jquery,JqCookie) {
         }
         $('#car-count').html(sum);
         $('.Shopping-cart .count').html(sum);
-        $('#shopcar span').html(`(${sum})`);
     }
 
     function addCarData() {
@@ -148,6 +147,7 @@ define(['jquery', 'JqCookie'], function (jquery,JqCookie) {
                     }
                 }
                 var str = ``;
+                var str1 = ``;
                 for (var m = 0; m < newArr.length; m++) {
                     str += `<div class="good-box" id="${newArr[m].id}">
                         <div class="good-pic">
@@ -163,7 +163,21 @@ define(['jquery', 'JqCookie'], function (jquery,JqCookie) {
     </div>
 </div>`;
                 }
+                for (let m = 0; m < newArr.length; m++){
+                    str1 += `<tr>
+                    <td class="name" id="${newArr[m].id}"><img src="${newArr[m].img}" alt=""><span>${newArr[m].name}</span></td>
+                    <td>${newArr[m].price}</td>
+                    <td class="count">
+                        <div class="add">+</div>
+                        <input type="text" value="${newArr[m].num}" disabled>
+                        <div class="red">-</div>
+                    </td>
+                    <td><button class="delF">删除</button></td>
+                </tr>`
+                }
                 $('#goods').html(str);
+                $('#Tbody').html(str1);
+
             },
             error: function (msg) {
                 console.log(msg);

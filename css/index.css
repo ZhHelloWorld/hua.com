@@ -39,7 +39,8 @@
       left: 0;
       padding: 12px;
       background-color: #fff;
-      display: none; }
+      display: none;
+      z-index: 1; }
       .header-l .focusWechat #wechat-code img {
         width: 124px;
         height: 124px; }
@@ -50,6 +51,7 @@
     .header-l .focusWechat span {
       background: url("../imgs/Sprite (2).png") no-repeat -23px -14px; }
   .header-l .app {
+    z-index: 1;
     position: relative;
     padding: 0 15px;
     cursor: pointer; }
@@ -105,7 +107,9 @@
       padding: 20px;
       position: absolute;
       top: 40px;
-      left: 0; }
+      left: 0;
+      z-index: 1;
+      background-color: #fff; }
       .header-r #service #customer-list li:hover {
         color: #FF734D; }
   .header-r .Order-inquiry {
@@ -333,7 +337,8 @@ h1 {
   background-color: #fff;
   top: 0;
   right: 0;
-  display: none; }
+  display: none;
+  z-index: 1; }
 
 .type {
   padding: 10px 20px; }
