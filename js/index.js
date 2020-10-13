@@ -89,12 +89,14 @@ define(['jquery'], function (jquery) {
                 var str = ``;
                 for (var i = 0; i < arr.length; i++) {
                     str += `<div class="box fl">
+                    <a href="details.html?id#${arr[i].id}" style="display:block">
             <div class="img">
                 <img src="./imgs/giftShow (${i + 1}).jpg" alt="">
             </div>
             <p>${arr[i].name}</p>
             <div class="price">${arr[i].price}</div>
             <span>${arr[i].sell}</span>
+            </a>
         </div>`;
                 }
                 $('#gift-show').html(str);
@@ -146,14 +148,14 @@ define(['jquery'], function (jquery) {
             success: function (arr) {
                 var str = ``;
                 for (let i = 0; i < arr.length; i++) {
-                    str += `<div class="box fl">
+                    str += `<a href="details.html?id#${arr[i].id}" style="display:block"><div class="box fl">
                     <div class="img">
                         <img src="./imgs/fam (${i+1}).jpg" alt="">
                     </div>
                     <p>${arr[i].text}</p>
                     <div class="price">${arr[i].price}</div>
                     <span>${arr[i].sell}</span>
-                </div>`;
+                </div></a>`;
                 }
                 $('#elder').html(str);
             },
@@ -167,14 +169,14 @@ define(['jquery'], function (jquery) {
             success: function (arr) {
                 var str = ``;
                 for (let i = 0; i < arr.length; i++) {
-                    str += `<div class="box fl">
+                    str += `<a href="details.html?id#${arr[i].id}" style="display:block"><div class="box fl">
                     <div class="img">
                         <img src="./imgs/loveFlower (${i+1}).jpg" alt="">
                     </div>
                     <p>${arr[i].text}</p>
                     <div class="price">${arr[i].price}</div>
                     <span>${arr[i].sell}</span>
-                </div>`;
+                </div></a>`;
                 }
                 $('#love').html(str);
             },
@@ -188,14 +190,14 @@ define(['jquery'], function (jquery) {
             success: function (arr) {
                 var str = ``;
                 for (let i = 0; i < arr.length; i++) {
-                    str += `<div class="box fl">
+                    str += `<a href="details.html?id#${arr[i].id}" style="display:block"><div class="box fl">
                     <div class="img">
                         <img src="./imgs/immortalFlower (${i+1}).jpg" alt="">
                     </div>
                     <p>${arr[i].text}</p>
                     <div class="price">${arr[i].price}</div>
                     <span>${arr[i].sell}</span>
-                </div>`;
+                </div></a>`;
                 }
                 $('#Immortal').html(str);
             },
@@ -218,7 +220,7 @@ define(['jquery'], function (jquery) {
                     <span>${arr[i].sell}</span>
                 </div>`;
                 }
-                $('#cakeSell').html(str);
+                $('.gift-right').html(str);
             },
             error: function (msg) {
                 console.log(msg);

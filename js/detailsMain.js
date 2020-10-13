@@ -3,21 +3,19 @@ require.config({
         jquery:'jquery-1.10.1.min',
         JqCookie:'jquery.cookie',
         index:'index',
-        list:'list'
+        details:'details'
     },
     shim:{
         "JqCookie": ['jquery'],
-        "list":['JqCookie'],
+        "details":['JqCookie'],
     }
 })
 
-require(['index','list'],function(index,list){
+require(['index','details'],function(index,details){
     index.headerCode();
     index.rotate();
-    index.addData();
-    index.tab();
     index.cityChoose();
-    index.slide();
-    index.backTop();
-    list.SUM();
+    index.addData();
+    details.magnifier();
+    details.differentPro();
 })

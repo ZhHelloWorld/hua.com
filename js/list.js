@@ -13,13 +13,14 @@ define(['jquery', 'JqCookie'], function (jquery,JqCookie) {
 
     function addDatas(){
         $.ajax({
-            url:'../data/showProducts.json',
+            url:'../data/list.json',
             success: function (arr) {
                 var str = ``;
                 for (var i = 0; i < arr.length; i++) {
                     str += `<div id="commodity">
+                    <a href="details.html?id#${arr[i].id}">
         <img src="${arr[i].img}" alt="">
-        <p id="name">${arr[i].name}</p>
+        <p id="name">${arr[i].name}</p></a>
         <button class="join" id="${arr[i].id}">加入购物车</button>
     </div>`;
                 }
@@ -133,7 +134,7 @@ define(['jquery', 'JqCookie'], function (jquery,JqCookie) {
         }
 
         $.ajax({
-            url:'../data/showProducts.json',
+            url:'../data/list.json',
             success: function (arr) {
                 var cookieArr = cookieStr;
                 var newArr = [];
@@ -148,6 +149,7 @@ define(['jquery', 'JqCookie'], function (jquery,JqCookie) {
                 }
                 var str = ``;
                 var str1 = ``;
+                var str2 = ``;
                 for (var m = 0; m < newArr.length; m++) {
                     str += `<div class="good-box" id="${newArr[m].id}">
                         <div class="good-pic">

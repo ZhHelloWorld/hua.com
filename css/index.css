@@ -693,6 +693,8 @@ h1 {
   text-align: center;
   background-color: #fff;
   cursor: pointer; }
+  #gift-show .box .hrefA {
+    display: block; }
   #gift-show .box img {
     width: 211px;
     height: 230px;
