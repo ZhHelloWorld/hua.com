@@ -1,4 +1,4 @@
-define(['jquery','JqCookie'], function (jquery,JqCookie){
+define(['jquery','JqCookie','list','parabola'], function (jquery,JqCookie,list,parabola){
     function magnifier(){
         $('.details').on('mouseenter','.showSmall',function(){
             $('.mask,.showBig').show();
@@ -84,8 +84,44 @@ define(['jquery','JqCookie'], function (jquery,JqCookie){
         })
 
     }
+
+    function addCart(){
+        var sId = window.location.hash
+        var id = sId.substr(1);
+        id = parseInt(id);
+        $('.details').on('click','.buyAfter',function(){
+            var first = !($.cookie('goods'));
+            if (first) {
+                $.cookie('goods', JSON.stringify([{
+                    id: id,
+                    num: 1
+                }]), { exrires: 7 })
+            } else {
+                var cookieArr = JSON.parse($.cookie('goods'));
+                var same = false;
+                for (var j = 0; j < cookieArr.length; j++) {
+                    if (cookieArr[j].id == id) {
+                        same = true;
+                        break;
+                    }
+                }
+                if (same) {
+                    cookieArr[j].num++
+                } else {
+                    cookieArr.push({
+                        id: id,
+                        num: 1
+                    })
+                }
+                $.cookie('goods', JSON.stringify(cookieArr), { exrires: 7 });
+            }
+        list.SUM();
+        list.ballMove($(this))
+        })
+    }
     return{
         magnifier,
         differentPro,
+        addCart
     }
 })

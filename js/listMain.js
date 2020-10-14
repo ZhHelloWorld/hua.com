@@ -3,7 +3,8 @@ require.config({
         jquery: 'jquery-1.10.1.min',
         JqCookie: 'jquery.cookie',
         index: 'index',
-        list: 'list'
+        list: 'list',
+        parabola:'parabola'
     },
     shim: {
         "JqCookie": ['jquery'],

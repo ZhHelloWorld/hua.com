@@ -4,11 +4,13 @@ define(['jquery', 'JqCookie', 'list'], function (jquery, JqCookie, list) {
         function first() {
             var first = !($.cookie('goods'));
             if (first) {
-                str = `<tr><td style="height:80px;line-height:80px">您的购物车里还没有添加东西哦,快去<a style="color:blue" href="list.html">热门商品列表</a>里去添加商品吧</td></tr>`
+                str = `<tr><td style="height:80px;line-height:80px">您的购物车里还没有添加东西哦,快去<a style="color:blue" href="list.html">挑选热门商品</a>吧</td></tr>`
                 $('#Tbody').html(str);
+                $('#tab-foot').css('display','none')
             }
             else {
                 list.addCarData();
+                $('#tab-foot').css('display','flex')
             }
         }
 

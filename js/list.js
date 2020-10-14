@@ -1,4 +1,4 @@
-define(['jquery', 'JqCookie'], function (jquery,JqCookie) {
+define(['jquery', 'JqCookie','parabola'], function (jquery,JqCookie,parabola) {
     function carMove(){
         $('#car').mouseenter(function () {
             $(this).stop().animate({
@@ -124,10 +124,11 @@ define(['jquery', 'JqCookie'], function (jquery,JqCookie) {
             }
         }
         $('#car-count').html(sum);
-        $('.Shopping-cart .count').html(sum);
+        $('.Shopping-cart>.count').html(sum);
     }
 
     function addCarData() {
+        var sum = 0
         var cookieStr = JSON.parse($.cookie('goods'));
         if (!cookieStr) {
             return;
@@ -176,10 +177,18 @@ define(['jquery', 'JqCookie'], function (jquery,JqCookie) {
                     </td>
                     <td><button class="delF">删除</button></td>
                 </tr>`
+                var Price = newArr[m].price.substr(1);
+                sum += Price *  newArr[m].num
                 }
+                str2 += `<div class="pay-box">
+                    <a href="list.html" class="goChoose"><挑选更多商品</a>
+                    <div class="pay fr">应付金额 : <span> ¥</span><span>${sum}</span></div>
+                </div>
+                <div class="settlement">去结算</div>`;
+            console.log(str1)
                 $('#goods').html(str);
                 $('#Tbody').html(str1);
-
+                $('#tab-foot').html(str2)
             },
             error: function (msg) {
                 console.log(msg);
@@ -194,8 +203,16 @@ define(['jquery', 'JqCookie'], function (jquery,JqCookie) {
           display: 'block'
         })
         console.log($(oBtn).offset().left)
-        var offsetX = $(".icon-car").offset().left - $("#ball").offset().left;
-        var offsetY =  $(".icon-car").offset().top - $("#ball").offset().top;
+        var oIcon = document.querySelector('.icon-car');
+        var oCart = document.querySelector('.Shopping-cart>span');
+        if(oIcon){
+            var offsetX = $(".icon-car").offset().left - $("#ball").offset().left;
+            var offsetY =  $(".icon-car").offset().top - $("#ball").offset().top;
+        }else if(oCart){
+            var offsetX = $(".Shopping-cart>span").offset().left - $("#ball").offset().left;
+            var offsetY =  $(".Shopping-cart>span").offset().top - $("#ball").offset().top;
+        }
+        
         console.log(offsetX,offsetY)
         var bool = new Parabola({
           el: "#ball",
@@ -216,5 +233,6 @@ return {
     SUM,
     carMove,
     nodeClick,
+    ballMove
 }
 })

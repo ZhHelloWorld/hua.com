@@ -39,3 +39,31 @@ table {
       table .count div:hover {
         background-color: #E6E6E6;
         cursor: pointer; }
+
+#tab-foot {
+  width: 1000px;
+  margin: 20px auto;
+  height: 52px;
+  line-height: 52px;
+  display: flex;
+  border: 1px solid #EBEBEB; }
+  #tab-foot .pay-box {
+    font-size: 14px;
+    padding: 0 20px;
+    flex: 1; }
+  #tab-foot .goChoose {
+    line-height: 52px; }
+    #tab-foot .goChoose:hover {
+      color: #FF6A00; }
+  #tab-foot .pay span {
+    color: #FF6A00;
+    font-size: 20px; }
+  #tab-foot .settlement {
+    width: 120px;
+    background-color: #FF6A00;
+    border: 1px solid #FF6A00;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer; }

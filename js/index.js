@@ -315,14 +315,14 @@ define(['jquery'], function (jquery) {
             }
             aSlides.animate({
                 opacity: 0.6,
-            }).css('display', 'none').eq(iNow).animate({
+            },200).css('display', 'none').eq(iNow).animate({
                 opacity: 1,
-            }).css('display', 'block')
+            },200).css('display', 'block')
             if (iNow == aLis.size()) {
                 iNow = 0;
                 aSlides.eq(iNow).animate({
                     opacity: 1,
-                }).css('display', 'block')
+                },200).css('display', 'block')
                 aLis.removeClass('active').eq(iNow).addClass('active');
             }
         }
